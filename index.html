@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saliha Nadeem's Portfolio</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts Preconnect & Asset Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asset&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home" id="easter-egg-btn" class="logo">HER</a>
+        <div class="nav-links">
+            <a href="#home">HOME</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#" download class="resume-download">RESUME ⬇</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- Hidden Easter Egg Section -->
+    <div id="secret-yap">
+        <p class="secret-label">SUPER SECRET</p>
+        <p class="secret-text">(WHY DID U CLICK IT?)</p>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="page-section">
+        <div class="hero">
+            <p class="hero-top-subtitle">hello, i am</p>
+            <h1 class="hero-h1">SALIHA</h1>
+            <p class="subtitle">mechatronics engineer and a lot more (^_-)</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="page-section">
+        <div class="portfolio-section-inner">
+            <h2 class="portfolio-title">PROJECTS</h2>
+            <p class="page-subtitle">Project and code repositories.</p>
+            <div class="portfolio-grid">
+                <!-- Arduino Modal Trigger Card -->
+                <div class="portfolio-card" onclick="openArduinoDrawer()">
+                    <div class="arduino-content">
+                        <span class="doodle">Arduino</span>
+                        <h3>ARDUINO PROJECTS</h3>
+                        <p class="card-hint">Click to open</p>
+                    </div>
+                </div>
+                <!-- Placeholder Card -->
+                <div class="portfolio-card">
+                    <div class="arduino-content">
+                        <span class="doodle">Future Build</span>
+                        <h3>PROJECT SLOT</h3>
+                        <p class="card-hint">coming soon</p>
+                    </div>
+                </div>
+                <!-- Placeholder Card -->
+                <div class="portfolio-card">
+                    <div class="arduino-content">
+                        <span class="doodle">Future Build</span>
+                        <h3>PROJECT SLOT</h3>
+                        <p class="card-hint">coming soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="page-section">
+        <div class="contact-section-inner">
+            <div class="contact-info">
+                <h2>CONTACT</h2>
+                <p>Get in touch for collaborations, engineering projects, or just to talk code.</p>
+                <p class="contact-email"><strong>Email:</strong> salihanadeemmustafa@gmail.com</p>
+            </div>
+            <div class="contact-form-box">
+                <h3>CONTACT FORM</h3>
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                    <input type="hidden" name="access_key" value="91768cc9-b3cd-458d-81ad-bd3f3153d664">
+                    <input type="text" name="name" class="form-input" placeholder="Your name" required>
+                    <input type="email" name="email" class="form-input" placeholder="Your e-mail" required>
+                    <textarea name="message" class="form-input" placeholder="Message" rows="4" required></textarea>
+                    <button type="submit" class="form-btn">SEND MESSAGE</button>
+                    <p id="form-result" style="font-size: 12px; margin-top: 10px; color: #38bdf8;"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arduino Projects Modal Vault -->
+    <div id="arduino-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeArduinoDrawer()">&times;</span>
+            <h2>ARDUINO PROJECTS</h2>
+            <p class="modal-desc">Direct links to my projects hosted on Google Drive:</p>
+            
+            <div class="drive-links-list">
+                <a href="https://drive.google.com/drive/folders/1_IKUllnkRXrkNx_sOWTpqROyT2GXUWpp?usp=share_link" target="_blank" class="drive-item">
+                    <span>📁 LED Blink Circuit</span>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="https://drive.google.com/drive/folders/136Nntot_8YxVA6XaK6WGsc3Er-mbNr30?usp=share_link" target="_blank" class="drive-item">
+                    <span>📁 Motion Detecting Sensor</span>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="https://drive.google.com/drive/folders/1b9Z4sVy2Lmb8hi-kefp0buWVAcDC_42a?usp=share_link" target="_blank" class="drive-item">
+                    <span>📁 LED Reaction Game</span>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="https://drive.google.com/drive/folders/1LD_xs66yuZyVdgJtqrI9hargNruG23nw?usp=share_link" target="_blank" class="drive-item">
+                    <span>📁 Clap Activated Buzzer</span>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="https://drive.google.com/drive/folders/1khgyIxv_ImebaW49aLsmoPXvqcU9pLMH?usp=share_link" target="_blank" class="drive-item">
+                    <span>📁 Water Leak Detector</span>
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
